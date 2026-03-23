@@ -182,7 +182,7 @@ class Fish {
 
   reproduce() {
     let factor = reproSlider.value();
-    let threshold = 100 * (1 / factor);
+    let threshold = 50 * (1 / factor);
 
     if (this.energy > threshold && random() < 0.02) {
       this.energy -= 50;
